@@ -14,5 +14,8 @@ gem 'berkshelf'
 #   gem "vagrant-omnibus", github: "schisamo/vagrant-omnibus"
 # end
 
+gem "chef"
 gem "test-kitchen"
 gem "kitchen-vagrant"
+gem "chefspec"
+gem 'knife-spec'
