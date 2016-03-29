@@ -1,0 +1,12 @@
+language: ruby
+cache: bundler
+sudo: false
+notifications:
+  email:
+    - arjenderijke@gmail.com
+
+before_install:
+  - gem install bundler
+
+rvm:
+  - 2.1
