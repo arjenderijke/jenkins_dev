@@ -1,9 +1,6 @@
 jenkins_dev Cookbook
 ====================
-TODO: Enter the cookbook description here.
-
-e.g.
-This cookbook makes your favorite breakfast sandwich.
+Chef Cookbook to test new features for configuring an AWS OpsWorks stack using a custom cookbook.
 
 Requirements
 ------------
