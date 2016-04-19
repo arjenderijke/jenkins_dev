@@ -1,4 +1,5 @@
-require_relative '../spec_helper'
+#require_relative '../spec_helper'
+require 'spec_helper'
 
 describe 'jenkins_dev::default' do
   let(:chef_run) {
