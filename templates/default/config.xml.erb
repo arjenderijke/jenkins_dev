@@ -27,7 +27,7 @@ ctNamingStrategy"/>
           <memory>2048</memory>
           <cpu>1</cpu>
           <privileged>false</privileged>
-          <taskDefinitionArn>arn:aws:ecs:eu-central-1:<%= @config['account-id'] %>:task-definition/jenkins-slave:1</taskDefinitionArn>
+          <taskDefinitionArn>arn:aws:ecs:eu-central-1:<%= @config['account-id'] %>:task-definition/jenkins-slave:17</taskDefinitionArn>
         </com.cloudbees.jenkins.plugins.amazonecs.ECSTaskTemplate>
       </templates>
       <credentialsId></credentialsId>
@@ -48,7 +48,7 @@ ctNamingStrategy"/>
     </hudson.model.AllView>
   </views>
   <primaryView>All</primaryView>
-  <slaveAgentPort>0</slaveAgentPort>
+  <slaveAgentPort>5000</slaveAgentPort>
   <label></label>
   <nodeProperties/>
   <globalNodeProperties/>

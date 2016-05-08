@@ -8,6 +8,8 @@
 #
 
 node.default['jenkins']['master']['version'] = '1.658-1.1'
+serverinstance = search("aws_opsworks_instance", "self:true").first
+node.default['jenkins']['master']['jenkins_args'] = "hudson.TcpSlaveAgentListener.hostName=#{serverinstance['private_dns']}"
 
 include_recipe 'jenkins::master'
 
@@ -21,8 +23,6 @@ end
 jenkins_plugin 'aws-java-sdk' do
   version '1.10.45'
 end
-
-serverinstance = search("aws_opsworks_instance", "self:true").first
 
 template "#{node['jenkins']['master']['home']}/jenkins.model.JenkinsLocationConfiguration.xml" do
   source 'default/jenkins.model.JenkinsLocationConfiguration.xml.erb'
